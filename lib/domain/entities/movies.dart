@@ -1,4 +1,12 @@
+import 'package:isar/isar.dart';
+
+// Archivo que se va a generar de manera automatica
+part 'movies.g.dart';
+
+@collection
 class Movie {
+  // Lo dejamos opcional, para que isar autoincremente el Id por defecto
+  Id? isarId;
   final bool adult;
   final String backdropPath;
   final List<String> genreIds;
